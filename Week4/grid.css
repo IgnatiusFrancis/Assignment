@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+}
+:root {
+  --red: hsl(14.19, 83.54%, 52.35%);
+  --yellow: hsl(38.5, 100%, 50.2%);
+  --green: hsl(142.18, 94.29%, 34.31%);
+  --blue: hsl(198.81, 99.21%, 49.8%);
+  --black: hsl(231.43, 21.21%, 12.94%);
+}
+body {
+  overflow: hidden;
+  display: flex;
+  min-height: 100vh;
+  place-items: center;
+  place-content: center;
+  padding: 3rem;
+}
+.grid-boxes {
+  width: min(800px, 100%);
+  aspect-ratio: 3 / 2;
+  gap: 1rem;
+  display: grid;
+  grid-template-areas: "a a a a a a a a a a b b b b b" "a a a a a a a a a a b b b b b" "c c c c c c c d d d d d d d d" "c c c c c c c e e e e e e e e";
+}
+.grid-boxes > div {
+  position: relative;
+  cursor: grab;
+}
+
+.grid-boxes > div:nth-child(1) {
+  grid-area: a;
+  background-color: var(--red);
+}
+.grid-boxes > div:nth-child(2) {
+  grid-area: b;
+  background-color: var(--yellow);
+
+}
+.grid-boxes > div:nth-child(3) {
+  grid-area: c;
+  background-color: var(--green);
+
+}
+.grid-boxes > div:nth-child(4) {
+  grid-area: d;
+  background-color: var(--blue);
+
+}
+.grid-boxes > div:nth-child(5) {
+  grid-area: e;
+  background-color: var(--blue);
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 2rem;
+  }
+  .grid-boxes {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 540px) {
+  .grid-boxes {
+    gap: 0.75rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  body {
+    padding: 1rem;
+  }
+  .grid-boxes {
+    gap: 0.5rem;
+  }
+}
