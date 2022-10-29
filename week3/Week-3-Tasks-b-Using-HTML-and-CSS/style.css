@@ -1,0 +1,95 @@
+.content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.tomato {
+  background-color: #ff7979;
+}
+._tomato {
+  color: #ff7979;
+}
+.form-div {
+  background-color: white;
+}
+.reg {
+  background: #5e54a4;
+}
+.reg p {
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+.claim {
+  background-color: #38cc8b;
+}
+
+.box_shadow {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+._inputs {
+  padding: 40px;
+}
+.input_tag {
+  margin-bottom: 20px;
+}
+.input_tag input {
+  padding: 9px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 6px;
+}
+.font_sz {
+  font-size: smaller;
+}
+.text-div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  width: 60%;
+}
+#left {
+  position: relative; 
+}
+.text-div p {
+  font-size: 10px;
+}
+.image {
+  background-image: linear-gradient( 
+      to right,
+      rgba(255, 121, 121, 0.85),
+      rgba(255, 121, 121, 0.85)
+    ),
+    url(./istockphoto-1047259374-1024x1024.jpg);
+  background-size: cover;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.img-bg {
+  width: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.input_tag select {
+  padding: 9px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 6px;
+}
+.input_tag label {
+  color: #846f6f;
+  font-weight: 700;
+}
+.content_reg {
+  position: relative;
+top: 500px;
+}

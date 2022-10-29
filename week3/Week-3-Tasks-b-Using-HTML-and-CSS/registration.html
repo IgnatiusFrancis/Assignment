@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <title>Registration page</title>
+</head>
+
+<body>
+  <div class="content tomato content_reg">
+    <div class="image img-bg">
+      <div class="content-wrapper">
+        <section id="left">
+          <div class="text-div">
+            <h2>Learn to code by watching others</h2>
+            <p>
+              See how experienced developers solve problems in real-time.
+              Watching scripted tutorials is great, but understanding how
+              developers think is invaluable.
+            </p>
+          </div>
+        </section>
+        <section>
+          <form action="index.html" class="sec_holder">
+            <div class="reg box_shadow">
+              <p>Registration form</p>
+            </div>
+            <div class="form-div">
+              <div class="_inputs">
+                <div class="input_tag">
+                  <label>First name</label>
+                  <input type="text" placeholder="First Name" required />
+                </div>
+                <div class="input_tag">
+                  <label>Last name</label>
+                  <input type="text" placeholder="Last Name" required />
+                </div>
+                <div class="input_tag">
+                  <label>Phone number</label>
+                  <input type="number" placeholder="+2348062538463" pattern="[+]{1}[2-4]{3}[0-9]{5}[0-9]{5}" required />
+                </div>
+                <div class="input_tag">
+                  <label>Email address</label>
+                  <input type="email" placeholder="Email Address" required />
+                </div>
+                <div class="input_tag">
+                  <label>Gender</label>
+                  <select required>
+                    <option>Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                </div>
+                <div class="input_tag">
+                  <label>Date of birth</label>
+                  <input type="date" placeholder="Date of Birth" required />
+                </div>
+                <div class="input_tag">
+                  <label>Favourite colour</label>
+                  <input type="color" placeholder="Favourite Colour" required />
+                </div>
+                <div class="" style="text-align: center">
+                  <button type="submit" class="input_tag" style="
+                        padding: 10px;
+                        width: 50%;
+                        background: #ff7979;
+                        color: white;
+                        border-color: transparent;
+                      ">
+                    Submit
+                  </button>
+                </div>
+                <div>
+                  <p class="font_sz">
+                    By clicking the button, you are agreeing to our
+                    <span class="_tomato"><strong>Terms and Services</strong>
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
